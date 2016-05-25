@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="f709db13-61b5-43e9-9fc4-feae279f0f3a" name="UMLClassDiagram1" linkedPackageId="4945e632-9e2a-4bd5-a5da-97c843525967" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7f764739-fd0d-45ae-9dad-5a3c9acd0048">
+      <profileInstance Id="bbdff016-bc8d-40a1-8eee-a3e241e16d2a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0a0a2ade-d974-4b45-bbe8-b9c87b2b848f">
+      <profileInstance Id="8e2f42e8-4d7e-49f8-b52d-d368347c1aca" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a43574fb-5791-4a91-87aa-7b3aa5aa6ef5" name="XBoxService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf490a7b-6202-4021-a022-117cc019ea12" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33c7bbe0-e328-46a4-8c7c-02589fcda72a" name="UserDataFlowManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f5535e83-e7f9-4a7e-ba58-677a3b940499" />
+        <suppliersInternal>
+          <dependency Id="f34c9252-e940-4bb1-bcb2-006b8e8032e9">
+            <classMoniker Id="a43574fb-5791-4a91-87aa-7b3aa5aa6ef5" LastKnownName="XBoxService" />
+            <elementDefinition Id="5ad5235a-a436-4646-8e3f-a36c2cee8d00" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="48cac9b4-1213-48de-a7aa-cd83543316a4" name="UserDataManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a203939f-5f01-45ca-93f8-dc1261fd313a" />
+        <suppliersInternal>
+          <dependency Id="e06fed7b-3735-4455-a4e7-e7f6686cbd1a">
+            <classMoniker Id="b8a9a63f-6a72-4083-8444-3fce2bc9f7e8" LastKnownName="UserCloudDataManager" />
+            <elementDefinition Id="301df39f-887f-4124-bef1-0c02392a89c4" />
+          </dependency>
+          <dependency Id="9b675346-3af7-4dd1-888c-a665b05a3479">
+            <classMoniker Id="e07ce9ea-5f9b-4062-bad2-018da213b2c9" LastKnownName="UserLocalDataManager" />
+            <elementDefinition Id="1c3a5937-42f7-4b1b-b2f0-007d7af6480d" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b8a9a63f-6a72-4083-8444-3fce2bc9f7e8" name="UserCloudDataManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60b49bee-fe26-409f-8be5-b199d108a5c5" />
+        <suppliersInternal>
+          <dependency Id="79ed6bb4-c328-490d-ab39-69d0bd089c11">
+            <classMoniker Id="33c7bbe0-e328-46a4-8c7c-02589fcda72a" LastKnownName="UserDataFlowManager" />
+            <elementDefinition Id="6c7a1c4f-08f1-42f9-b653-1c776d2b953c" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e07ce9ea-5f9b-4062-bad2-018da213b2c9" name="UserLocalDataManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2f58215a-a7c8-4884-971a-17ee79a85c63" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4903df5e-7c90-4d39-aa9e-27aa01937744" name="PopupService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8908c07f-a1ed-4485-8b4f-6858e5a8bf95" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bbf32b90-2045-4402-b9d8-f27828138a6b" name="OptionsService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c901bcac-f65d-4e47-9d4c-35ea3a07cb69" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ac5340aa-1d53-44a9-9374-f9169c682f73" name="UserDataFlowExtensions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="89e825cc-4f6b-4278-9be2-54a301c56536" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="afacefb8-ee98-450d-9e8d-7631e40e9184" name="Statistics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90adfa22-99bd-4a31-a222-164fdfb3ef5b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4945e632-9e2a-4bd5-a5da-97c843525967" name="ModelingProject1">
+    <elementDefinition Id="1cd6f180-0d98-4949-bf14-ec363fd0ab95" />
+  </package>
+</logicalClassDesignerModel>

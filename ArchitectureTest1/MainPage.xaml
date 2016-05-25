@@ -1,0 +1,53 @@
+﻿<Page xmlns:my="using:Microsoft.Advertising.WinRT.UI" 
+    x:Class="ArchitectureTest1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ArchitectureTest1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding MainPageViewModel, Source={StaticResource Locator}}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Hub Header="Architecture test" Orientation="Vertical">
+            <HubSection Header="Games">
+                <DataTemplate>
+                    <Button Content="Playing cards" Command="{Binding GoToPlayingCards}"></Button>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Challenges">
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <Button Content="Daily challenges"></Button>
+                        <Button Content="Star club"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Appearance themes">
+                <DataTemplate>
+                    <Button Content="Classic"></Button>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Awards">
+                <DataTemplate>
+                    <Button Content="Awards" Command="{Binding GoToAwards}"></Button>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Statistics">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding Statistics}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Text}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Ads">
+                <DataTemplate>
+                    <!--<my:AdControl />-->
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

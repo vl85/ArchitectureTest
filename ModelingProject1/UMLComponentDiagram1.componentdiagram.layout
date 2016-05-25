@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.875, 13.75" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="9a64fa79-4f76-447d-bc75-72e69f9eff9a" />
+  <nestedChildShapes>
+    <componentShape Id="635ac4fe-4f23-4e56-b861-f4dcc4b11520" absoluteBounds="3.25, 10.625, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="6f939f23-13c9-48e3-a41e-56e351652eee" LastKnownName="XboxService" />
+      <relativeChildShapes>
+        <requiredInterfaceShape Id="7591ed09-95b4-4f9e-b8d9-f8f98a4647bb" absoluteBounds="3.9375, 11.575, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="9a26420c-53ed-4e3f-b661-1fd7aa737fd8" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="e6d0f4b1-15e4-4e96-90df-3fafb5ccce9d" absoluteBounds="0.625, 10.625, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="ad7667e1-28db-4473-b832-a572f4916aab" LastKnownName="Analytics" />
+    </componentShape>
+    <componentShape Id="0e6c8ddc-8863-42a3-84ae-737d9d9caa97" absoluteBounds="7.625, 4.25, 1.8229166666666661, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="f6d64ec3-c8bc-4f29-b6ea-57d6d355bea6" LastKnownName="Statistics counters" />
+    </componentShape>
+    <componentShape Id="89a19155-0a61-4e7d-b276-c745521e1368" absoluteBounds="1.5208333333333333, 4.25, 1.9791666666666667, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="219a6065-14b6-432f-be9d-1c7936cec74a" LastKnownName="DailyChallenge counters" />
+    </componentShape>
+    <componentShape Id="3ee8a240-fcea-4325-bcf8-9306b31ba610" absoluteBounds="3.625, 4.25, 1.71875, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="364cec25-ef22-4ac4-bf04-1db047d85949" LastKnownName="Awards counters" />
+    </componentShape>
+    <componentShape Id="3e069e64-808a-4efc-8a17-263e6079e41e" absoluteBounds="5.875, 10.625, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="4eae395f-2bbc-4fad-b486-70221af3ca5e" LastKnownName="LocalStorage" />
+      <relativeChildShapes>
+        <requiredInterfaceShape Id="6978f1c2-5bb6-4346-a31b-c52154bf98aa" absoluteBounds="6.5, 11.575, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="523164bf-cd42-43b9-be90-a78b17f50972" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="d6eb311d-3c74-491e-963e-9a0744ce9eb5" absoluteBounds="11.625, 2.75, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="e281c644-6e25-443b-b1e4-44bf32baa9f9" LastKnownName="Popup" />
+    </componentShape>
+    <componentShape Id="3ba50228-6029-438f-a052-62813ea9d2e7" absoluteBounds="5.75, 4.25, 1.625, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="e04f8613-b4a6-4d0d-8740-f2a2695c91b9" LastKnownName="StarClub counters" />
+    </componentShape>
+    <componentShape Id="c0a69157-cb5f-441d-9ec2-26d36a8c4132" absoluteBounds="3.25, 12.5, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="b06a6804-c987-4a6f-a197-837d18c517f4" LastKnownName="XBoxLive" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="a856769b-4dd8-4503-94df-cdba9b0e526d" absoluteBounds="3.9375, 12.09375, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="1618a32c-1db9-4f90-a08f-871561fcb630" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="3c39eb3a-6790-429d-a484-5ab1e83df6fd" absoluteBounds="5.875, 12.5, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="a4605226-850a-4b6d-bd7f-5bd302ad4bd0" LastKnownName="FileSystem" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="a7319d75-bb23-4e6b-921f-543de655d2c6" absoluteBounds="6.5, 12.09375, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="25094849-bb04-4da0-90bb-c26d3b949ea7" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <commentShape Id="5aea3331-6397-417c-a6f1-42d1705a1cae" absoluteBounds="5.625, 0.875, 2.625, 0.875" customColor="251, 247, 200">
+      <commentMoniker Id="a716342f-7105-40eb-abde-e73689c5af37" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="4413dd95-5c8e-4e65-b43d-bd72c8ee7646" absoluteBounds="11.625, 4.25, 2.375, 1" customColor="251, 247, 200">
+      <commentMoniker Id="86c30ce8-c102-4fe3-841d-619cac47404c" />
+      <relativeChildShapes />
+    </commentShape>
+    <componentShape Id="79322892-d521-4e43-a5af-b802f15cac8e" absoluteBounds="3.75, 0.875, 1.8124999999999991, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="0b96015c-722a-4176-8d45-dfe74589c33d" LastKnownName="UserStateFlowControl" />
+    </componentShape>
+    <commentShape Id="eabe887a-7c0e-47fc-8aea-618ab94a8671" absoluteBounds="4.875, 10.625, 0.75, 0.25" customColor="251, 247, 200">
+      <commentMoniker Id="03b2a137-37ba-43be-8e7a-f45a8320bcff" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="774fcbfd-f003-4902-99f9-c615c955edb1" absoluteBounds="2.125, 5.375, 1.25, 0.5" customColor="251, 247, 200">
+      <commentMoniker Id="6fc5f07f-94fa-43d4-a3f4-25e02f0723c7" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="e62d4752-64db-485f-b6b4-45c63ab2df52" absoluteBounds="9.125, 9.625, 1.375, 1" customColor="251, 247, 200">
+      <commentMoniker Id="98e9b11d-95bf-4cf8-9512-1e10919a5906" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="d8ec98e5-6542-4dad-a017-18953638734a" absoluteBounds="10.75, 9.625, 1.25, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="acde7c0c-aa2d-4d85-96e2-2c1a7a09a749" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="3acba4c6-3ea2-4349-995f-e98100f78783" absoluteBounds="14.375, 4.25, 1.25, 0.75" customColor="251, 247, 200">
+      <commentMoniker Id="eaead24b-9a55-449f-a0ce-7eac64469211" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="68683014-c095-4903-9d27-d36358cf3e8f" absoluteBounds="3.625, 5.25, 1.875, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="40ccd233-022a-4089-91bf-449b761692f2" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="e33f4896-c106-4cd3-a762-9f12b9658fa7" absoluteBounds="5.75, 5.375, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="f6f23139-8df2-45bc-a78d-3d734af45f1c" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="72f5b76d-37a7-486d-b9ca-a6e0153ef322" absoluteBounds="12.25, 9.625, 1.25, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="0df1341b-e78e-4309-b569-918c92b5726d" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="0f606ad0-e4f9-4b71-90ca-dd19ecd962d8" absoluteBounds="13.75, 9.625, 1.25, 0.75" customColor="251, 247, 200">
+      <commentMoniker Id="c5676dd4-977d-4c26-979c-749877350cad" />
+      <relativeChildShapes />
+    </commentShape>
+    <componentShape Id="e3ede086-66f7-4730-8db6-12e3cefa7fbd" absoluteBounds="3.625, 7.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="7bb5074d-e267-4664-988f-461706d2b3fe" LastKnownName="Awards data" />
+    </componentShape>
+    <componentShape Id="b396f7f4-f312-4da9-bef8-0a9414ca6989" absoluteBounds="5.25, 7.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="0d8e23a4-a25a-4d82-aef2-46c94faa1a3e" LastKnownName="StarClub data" />
+    </componentShape>
+    <componentShape Id="cb83e1de-21aa-4b62-b368-de658533a08c" absoluteBounds="1.729166666666667, 7.125, 1.770833333333333, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="04ee4ca6-4966-4d98-911b-539e9404d168" LastKnownName="DailyChallenge data" />
+    </componentShape>
+    <componentShape Id="41e357ca-a911-4550-9da1-7f254c1666de" absoluteBounds="6.875, 7.125, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="d2716311-092b-4c17-ad5e-6474af2b7274" LastKnownName="Statistics data" />
+    </componentShape>
+    <commentShape Id="ab49c693-5fa5-489b-b258-8cadf3b52720" absoluteBounds="9, 7.125, 2, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="b70ed853-636a-4f62-9b12-9f0c32b9e73b" />
+      <relativeChildShapes />
+    </commentShape>
+    <componentShape Id="052d75d7-1a26-4a15-b904-4055feee06e9" absoluteBounds="4.125, 8.25, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="c7b73f99-a472-42b8-93d7-aa0114ab6a19" LastKnownName="Common data" />
+    </componentShape>
+    <componentShape Id="0018d525-2299-48d5-a313-ca7e8da0506a" absoluteBounds="1.5, 2.75, 1.9791666666666667, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="3e928d5a-879c-4c30-93df-652e90144105" LastKnownName="DailyChallenge UI" />
+    </componentShape>
+    <componentShape Id="ad1b987d-eb82-41ac-86ec-1bd5191435cc" absoluteBounds="3.604166666666667, 2.75, 1.71875, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="c665cce4-56c7-4395-bdd2-3562b3273d81" LastKnownName="Awards UI" />
+    </componentShape>
+    <componentShape Id="095629b0-10a6-4480-941f-ca4cc99fcf94" absoluteBounds="5.75, 2.75, 1.625, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="75d023a3-7e54-4361-9b82-25d2e9d594fa" LastKnownName="StarClub UI" />
+    </componentShape>
+    <componentShape Id="8a8ac1ed-0e13-43c8-8b43-6a5836e32132" absoluteBounds="7.6041666666666679, 2.75, 1.8229166666666661, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="523f574a-49d3-48be-9356-2f11a6d184d7" LastKnownName="Statistics UI" />
+    </componentShape>
+    <componentShape Id="21abb64f-d6e0-4c96-b0c8-9ea65d34a8a6" absoluteBounds="9.625, 2.75, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="1e8a2a9e-3fb4-4d80-853d-e175efb8bead" LastKnownName="UpSell UI" />
+    </componentShape>
+    <componentShape Id="d53573a2-804b-431f-967d-9d8b79f133a2" absoluteBounds="9.625, 4.25, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="f9d36a5c-4dc5-40f1-b786-f40867c8f64a" LastKnownName="UpSell counters" />
+    </componentShape>
+    <commentShape Id="7142cf1f-9a3c-4503-939e-51644973879a" absoluteBounds="11.5, 5.75, 3.625, 1.375" customColor="251, 247, 200">
+      <commentMoniker Id="08579c50-0343-47d1-a24d-bd1334e31462" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</componentDiagram>

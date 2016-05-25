@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="9a64fa79-4f76-447d-bc75-72e69f9eff9a" name="UMLComponentDiagram1" linkedPackageId="af827adc-edd5-4e21-b681-0e4ad20e4712" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="a716342f-7105-40eb-abde-e73689c5af37">
+      <elementDefinition Id="4bed19d2-f251-44db-9652-85d305d428be" />
+      <body>Логинится локально, в облаке, явно, неявно
+Один раз и в последующих выдачах мержит данные из восьмёрки, облака, локальные при наличии</body>
+    </comment>
+    <comment Id="86c30ce8-c102-4fe3-841d-619cac47404c">
+      <elementDefinition Id="bc6817ab-fca3-4932-a065-80e4ba898671" />
+      <body>Алгоритмы мержа данных зависят от данных
+Что-либо о данных знают только их владельцы.
+Одни данные зависят от действий пользователя, а другие - нет.</body>
+    </comment>
+    <comment Id="03b2a137-37ba-43be-8e7a-f45a8320bcff">
+      <elementDefinition Id="fab86168-0c8e-4716-a85a-c9944767b5be" />
+      <body>Логин</body>
+    </comment>
+    <comment Id="6fc5f07f-94fa-43d4-a3f4-25e02f0723c7">
+      <elementDefinition Id="6e6f993f-cf05-4383-8a63-5b79f7583e03" />
+      <body>Подобно award-ам</body>
+    </comment>
+    <comment Id="98e9b11d-95bf-4cf8-9512-1e10919a5906">
+      <elementDefinition Id="05e459ed-5eed-483e-9fc1-0853e84037f4" />
+      <body>Награды выдаются на основе статистики и игровых событий. События можно превратить в игровую статистику</body>
+    </comment>
+    <comment Id="acde7c0c-aa2d-4d85-96e2-2c1a7a09a749">
+      <elementDefinition Id="5d845e69-1849-4230-9101-8193f1efa060" />
+      <body>Где-то должен быть слой проверок на выполненение условий для событий. Может ли он быть на уровне статистики.</body>
+    </comment>
+    <comment Id="eaead24b-9a55-449f-a0ce-7eac64469211">
+      <elementDefinition Id="054da876-8198-45ca-a3e5-303a787e8315" />
+      <body>У всех есть UI, данные, логика
+Можно ли сделать их компонентами?</body>
+    </comment>
+    <comment Id="40ccd233-022a-4089-91bf-449b761692f2">
+      <elementDefinition Id="2af6a53f-73cc-42a3-9672-ee9e273f01aa" />
+      <body>Компонент в игре на каждом шаге приводит в соответствие свои элементы State-а (счётчики) На входе Head of Command elements.
+Есть формочки, картинки, данные.</body>
+    </comment>
+    <comment Id="f6f23139-8df2-45bc-a78d-3d734af45f1c">
+      <elementDefinition Id="d5a92794-439a-4cc1-b4fc-fb9ec5c9a91b" />
+      <body>Подобно award-ам.</body>
+    </comment>
+    <comment Id="0df1341b-e78e-4309-b569-918c92b5726d">
+      <elementDefinition Id="28d50388-078c-4ba5-bdfb-f3f094edb899" />
+      <body>Премиум - это флаг, связанная с ним логика в компонентах и формочки, возможность оплаты и т.п.</body>
+    </comment>
+    <comment Id="c5676dd4-977d-4c26-979c-749877350cad">
+      <elementDefinition Id="f21dd2d5-eee6-403a-a0f7-350e32a0c51a" />
+      <body>Fue - это тоже флаг, связанная логика в компонентах, формочки</body>
+    </comment>
+    <comment Id="b70ed853-636a-4f62-9b12-9f0c32b9e73b">
+      <elementDefinition Id="51242172-3e01-4e1f-a591-b2ebb5b1a3a5" />
+      <body>UserState and SystemState
+Знания о мерже здесь?</body>
+    </comment>
+    <comment Id="08579c50-0343-47d1-a24d-bd1334e31462">
+      <elementDefinition Id="339fcb79-1d1d-44e3-a569-b0eed17b74da" />
+      <body>Держать данные в разрезе устройств. При необходимости отображать - агрегировать их. При необходимости менять - менять только данные относящиеся к своему устройству. Проверять наличие локальных данных. Если нет - брать из облака. Если старый формат - конвертировать и удалять из старого облака данные этого устройства, записывать в новое.
+Загружать локальные данные. Периодически проводить обновлять данные в облаке.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="6f939f23-13c9-48e3-a41e-56e351652eee" name="XboxService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2919fe35-e5ef-4f90-95c9-95076b5b9ec5" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="9a26420c-53ed-4e3f-b661-1fd7aa737fd8" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="3b494d78-e427-4625-97b0-fab75c897653" />
+            <type_NamedElement>
+              <interfaceMoniker Id="78cea692-f2c3-4095-bbe5-c8ab400970e2" LastKnownName="Interface1" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ad7667e1-28db-4473-b832-a572f4916aab" name="Analytics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="816bd5d1-9739-45a9-a121-86321f2a5a1a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f6d64ec3-c8bc-4f29-b6ea-57d6d355bea6" name="Statistics counters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1bba31c7-54b0-430f-9927-7d55c26ade5a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="219a6065-14b6-432f-be9d-1c7936cec74a" name="DailyChallenge counters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bc0877a0-2177-4f17-84d1-7677162cc72e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="364cec25-ef22-4ac4-bf04-1db047d85949" name="Awards counters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ab93d220-1d78-471a-937a-a2da151f7685" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4eae395f-2bbc-4fad-b486-70221af3ca5e" name="LocalStorage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="896f5333-4a04-4f9e-b54a-f2e48bc404ee" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="523164bf-cd42-43b9-be90-a78b17f50972" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="3bf98bac-32a0-4696-a432-4aba7b8ba77d" />
+            <type_NamedElement>
+              <interfaceMoniker Id="beee4683-3f65-4389-8146-e60ea86baa6d" LastKnownName="Interface2" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e281c644-6e25-443b-b1e4-44bf32baa9f9" name="Popup" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="703c1b6a-00da-40d5-9ca3-eb8c95c76ebe" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e04f8613-b4a6-4d0d-8740-f2a2695c91b9" name="StarClub counters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97bbdd49-74a0-4413-ae7b-2bc96829fa47" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b06a6804-c987-4a6f-a197-837d18c517f4" name="XBoxLive" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8559a464-5006-4270-a9b3-9af9cc151263" />
+        <ownedAttributesInternal>
+          <providedInterface Id="1618a32c-1db9-4f90-a08f-871561fcb630" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a6a27f37-ad34-4b88-b49f-5e976c2e6407" />
+            <type_NamedElement>
+              <interfaceMoniker Id="bda72e84-1e8f-4679-9e9c-da51a9e97736" LastKnownName="Interface1" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="bda72e84-1e8f-4679-9e9c-da51a9e97736" name="Interface1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="576e77b9-cf9e-4029-8eee-1ae3bdf0b2cd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="78cea692-f2c3-4095-bbe5-c8ab400970e2" name="Interface1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="376cc8d9-2d30-4fa4-b38f-76b6d63b2f45" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="a4605226-850a-4b6d-bd7f-5bd302ad4bd0" name="FileSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04e0efe2-8925-43ec-bd33-6b86be7a7180" />
+        <ownedAttributesInternal>
+          <providedInterface Id="25094849-bb04-4da0-90bb-c26d3b949ea7" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4fc52b90-ba70-4b60-b902-2b2955cad55a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="77f486bf-6dea-4887-845f-facf0d9b04ed" LastKnownName="Interface2" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="77f486bf-6dea-4887-845f-facf0d9b04ed" name="Interface2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a4ceb7e7-52d1-48a8-93c8-b6dbc76fdb0f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="beee4683-3f65-4389-8146-e60ea86baa6d" name="Interface2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d9e4de6f-ed40-41cb-955c-e4b695d34149" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="0b96015c-722a-4176-8d45-dfe74589c33d" name="UserStateFlowControl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fa37cbe4-c6e6-43f1-bd92-366647e61f7d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7bb5074d-e267-4664-988f-461706d2b3fe" name="Awards data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee9a510e-d861-45aa-a547-3c31f251a990" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0d8e23a4-a25a-4d82-aef2-46c94faa1a3e" name="StarClub data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99844af9-8edc-4a02-9bdd-8e1d237dc686" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="04ee4ca6-4966-4d98-911b-539e9404d168" name="DailyChallenge data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="072089d7-5de0-4fff-8230-98d880aafc4c" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d2716311-092b-4c17-ad5e-6474af2b7274" name="Statistics data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cbd4efc4-f363-408f-83e3-656606b55d4e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c7b73f99-a472-42b8-93d7-aa0114ab6a19" name="Common data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1af9c94-3af5-4a50-97a7-1cacc4aa183b" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3e928d5a-879c-4c30-93df-652e90144105" name="DailyChallenge UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2c0eb1f1-2391-4b8b-aa4d-4f715bcd66d7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c665cce4-56c7-4395-bdd2-3562b3273d81" name="Awards UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49a44e62-ec1c-411e-90d3-9b948262feb6" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="75d023a3-7e54-4361-9b82-25d2e9d594fa" name="StarClub UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="228fcc7a-d648-452c-b136-132a172cfc77" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="523f574a-49d3-48be-9356-2f11a6d184d7" name="Statistics UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="133ac3d7-30c4-431f-813e-dd7e408fcb54" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1e8a2a9e-3fb4-4d80-853d-e175efb8bead" name="UpSell UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="560fa701-2856-4173-9291-a58f3a5b3749" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f9d36a5c-4dc5-40f1-b786-f40867c8f64a" name="UpSell counters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9908e6cf-1e1b-49a9-b32e-7d14dcdf5d93" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="af827adc-edd5-4e21-b681-0e4ad20e4712" name="ModelingProject1">
+    <elementDefinition Id="1cd6f180-0d98-4949-bf14-ec363fd0ab95" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a85be2c6-b6cb-4689-bd05-59490c7a361a">
+        <profileInstance Id="26f04a3f-c29a-4cc0-897d-88435cd66d9d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3e53e3be-2d50-4e52-8ffb-ab70156e36be">
+        <profileInstance Id="6f4d1053-7d88-43d7-b13d-d04c9e9bb0b9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

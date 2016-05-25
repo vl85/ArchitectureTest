@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="1cd6f180-0d98-4949-bf14-ec363fd0ab95"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="4bed19d2-f251-44db-9652-85d305d428be">
+      <body>Логинится локально, в облаке, явно, неявно
+Один раз и в последующих выдачах мержит данные из восьмёрки, облака, локальные при наличии</body>
+    </comment>
+    <comment
+      Id="bc6817ab-fca3-4932-a065-80e4ba898671">
+      <body>Алгоритмы мержа данных зависят от данных
+Что-либо о данных знают только их владельцы.
+Одни данные зависят от действий пользователя, а другие - нет.</body>
+    </comment>
+    <comment
+      Id="fab86168-0c8e-4716-a85a-c9944767b5be">
+      <body>Логин</body>
+    </comment>
+    <comment
+      Id="6e6f993f-cf05-4383-8a63-5b79f7583e03">
+      <body>Подобно award-ам</body>
+    </comment>
+    <comment
+      Id="05e459ed-5eed-483e-9fc1-0853e84037f4">
+      <body>Награды выдаются на основе статистики и игровых событий. События можно превратить в игровую статистику</body>
+    </comment>
+    <comment
+      Id="5d845e69-1849-4230-9101-8193f1efa060">
+      <body>Где-то должен быть слой проверок на выполненение условий для событий. Может ли он быть на уровне статистики.</body>
+    </comment>
+    <comment
+      Id="054da876-8198-45ca-a3e5-303a787e8315">
+      <body>У всех есть UI, данные, логика
+Можно ли сделать их компонентами?</body>
+    </comment>
+    <comment
+      Id="2af6a53f-73cc-42a3-9672-ee9e273f01aa">
+      <body>Компонент в игре на каждом шаге приводит в соответствие свои элементы State-а (счётчики) На входе Head of Command elements.
+Есть формочки, картинки, данные.</body>
+    </comment>
+    <comment
+      Id="d5a92794-439a-4cc1-b4fc-fb9ec5c9a91b">
+      <body>Подобно award-ам.</body>
+    </comment>
+    <comment
+      Id="28d50388-078c-4ba5-bdfb-f3f094edb899">
+      <body>Премиум - это флаг, связанная с ним логика в компонентах и формочки, возможность оплаты и т.п.</body>
+    </comment>
+    <comment
+      Id="f21dd2d5-eee6-403a-a0f7-350e32a0c51a">
+      <body>Fue - это тоже флаг, связанная логика в компонентах, формочки</body>
+    </comment>
+    <comment
+      Id="51242172-3e01-4e1f-a591-b2ebb5b1a3a5">
+      <body>UserState and SystemState
+Знания о мерже здесь?</body>
+    </comment>
+    <comment
+      Id="339fcb79-1d1d-44e3-a569-b0eed17b74da">
+      <body>Держать данные в разрезе устройств. При необходимости отображать - агрегировать их. При необходимости менять - менять только данные относящиеся к своему устройству. Проверять наличие локальных данных. Если нет - брать из облака. Если старый формат - конвертировать и удалять из старого облака данные этого устройства, записывать в новое.
+Загружать локальные данные. Периодически проводить обновлять данные в облаке.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bf490a7b-6202-4021-a022-117cc019ea12"
+        name="XBoxService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5535e83-e7f9-4a7e-ba58-677a3b940499"
+        name="UserDataFlowManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5ad5235a-a436-4646-8e3f-a36c2cee8d00">
+            <classMoniker
+              Id="bf490a7b-6202-4021-a022-117cc019ea12"
+              LastKnownName="XBoxService"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a203939f-5f01-45ca-93f8-dc1261fd313a"
+        name="UserDataManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="301df39f-887f-4124-bef1-0c02392a89c4">
+            <classMoniker
+              Id="60b49bee-fe26-409f-8be5-b199d108a5c5"
+              LastKnownName="UserCloudDataManager"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="1c3a5937-42f7-4b1b-b2f0-007d7af6480d">
+            <classMoniker
+              Id="2f58215a-a7c8-4884-971a-17ee79a85c63"
+              LastKnownName="UserLocalDataManager"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="60b49bee-fe26-409f-8be5-b199d108a5c5"
+        name="UserCloudDataManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6c7a1c4f-08f1-42f9-b653-1c776d2b953c">
+            <classMoniker
+              Id="f5535e83-e7f9-4a7e-ba58-677a3b940499"
+              LastKnownName="UserDataFlowManager"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2f58215a-a7c8-4884-971a-17ee79a85c63"
+        name="UserLocalDataManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8908c07f-a1ed-4485-8b4f-6858e5a8bf95"
+        name="PopupService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c901bcac-f65d-4e47-9d4c-35ea3a07cb69"
+        name="OptionsService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="89e825cc-4f6b-4278-9be2-54a301c56536"
+        name="UserDataFlowExtensions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90adfa22-99bd-4a31-a222-164fdfb3ef5b"
+        name="Statistics"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d6657e2a-f9f9-4e18-850b-86944a447f2b"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="52c2dcff-789a-436f-8083-d1789b122715"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="26541329-0c99-4571-9a23-85901c306e6d"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f71436c-572a-4c74-960c-1521713f8d7f"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2919fe35-e5ef-4f90-95c9-95076b5b9ec5"
+        name="XboxService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="3b494d78-e427-4625-97b0-fab75c897653"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="376cc8d9-2d30-4fa4-b38f-76b6d63b2f45"
+                LastKnownName="Interface1"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="816bd5d1-9739-45a9-a121-86321f2a5a1a"
+        name="Analytics"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1bba31c7-54b0-430f-9927-7d55c26ade5a"
+        name="Statistics counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2cbd2a7b-b4cb-4d20-ad9d-6472a8c6bdbb"
+        name="GameProgress"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f098efdf-9d06-46dc-ad62-c807dce5487e"
+        name="PuzzleDataManagement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="bc0877a0-2177-4f17-84d1-7677162cc72e"
+        name="DailyChallenge counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ab93d220-1d78-471a-937a-a2da151f7685"
+        name="Awards counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3ebe9726-23ff-4485-b76c-28daab4a707a"
+        name="Premium"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="77d49e75-c597-4320-8dc0-1ea293c9fd1d"
+        name="UserState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="896f5333-4a04-4f9e-b54a-f2e48bc404ee"
+        name="LocalStorage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="3bf98bac-32a0-4696-a432-4aba7b8ba77d"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d9e4de6f-ed40-41cb-955c-e4b695d34149"
+                LastKnownName="Interface2"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="703c1b6a-00da-40d5-9ca3-eb8c95c76ebe"
+        name="Popup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="97bbdd49-74a0-4413-ae7b-2bc96829fa47"
+        name="StarClub counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3629e3e6-ceb7-4a67-9bfd-580c089b5545"
+        name="Options"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="773ede84-4355-4a99-8391-3d593e530912"
+        name="FirstUserExperience"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="8559a464-5006-4270-a9b3-9af9cc151263"
+        name="XBoxLive"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="a6a27f37-ad34-4b88-b49f-5e976c2e6407"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="576e77b9-cf9e-4029-8eee-1ae3bdf0b2cd"
+                LastKnownName="Interface1"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="576e77b9-cf9e-4029-8eee-1ae3bdf0b2cd"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="376cc8d9-2d30-4fa4-b38f-76b6d63b2f45"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="04e0efe2-8925-43ec-bd33-6b86be7a7180"
+        name="FileSystem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="4fc52b90-ba70-4b60-b902-2b2955cad55a"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a4ceb7e7-52d1-48a8-93c8-b6dbc76fdb0f"
+                LastKnownName="Interface2"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a4ceb7e7-52d1-48a8-93c8-b6dbc76fdb0f"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d9e4de6f-ed40-41cb-955c-e4b695d34149"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fa37cbe4-c6e6-43f1-bd92-366647e61f7d"
+        name="UserStateFlowControl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="bbd4fdd5-b081-4320-bb74-431799194ee0"
+        name="SystemState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ee9a510e-d861-45aa-a547-3c31f251a990"
+        name="Awards data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="99844af9-8edc-4a02-9bdd-8e1d237dc686"
+        name="StarClub data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="072089d7-5de0-4fff-8230-98d880aafc4c"
+        name="DailyChallenge data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cbd4efc4-f363-408f-83e3-656606b55d4e"
+        name="Statistics data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1d737a9b-2045-445d-9ba7-ff605c77fe69"
+        name="Counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b1af9c94-3af5-4a50-97a7-1cacc4aa183b"
+        name="Common data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2c0eb1f1-2391-4b8b-aa4d-4f715bcd66d7"
+        name="DailyChallenge UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="49a44e62-ec1c-411e-90d3-9b948262feb6"
+        name="Awards UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="228fcc7a-d648-452c-b136-132a172cfc77"
+        name="StarClub UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="133ac3d7-30c4-431f-813e-dd7e408fcb54"
+        name="Statistics UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="560fa701-2856-4173-9291-a58f3a5b3749"
+        name="UpSell UI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9908e6cf-1e1b-49a9-b32e-7d14dcdf5d93"
+        name="UpSell counters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
